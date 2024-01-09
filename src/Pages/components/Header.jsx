@@ -9,19 +9,7 @@ const routes = [
   },
   {
     to: "about",
-    icon: "fa-solid fa-info",
-  },
-  {
-    to: "education",
-    icon: "fa-solid fa-user-graduate",
-  },
-  {
-    to: "experience",
-    icon: "fa-solid fa-briefcase",
-  },
-  {
-    to: "skills",
-    icon: "fa-solid fa-brain",
+    icon: "fa-solid fa-user",
   },
   {
     to: "projects",

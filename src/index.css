@@ -10,10 +10,13 @@
     --app-icon-color: #1F183D;
     --app-logo-color: #2D83E5 ;
     --app-box-shadow: -16px 3px 78px -22px rgba(45,131,229,0.65);
-    --profile-image-background: #1A1A29
+    --profile-image-background: #1A1A29;
+    --app-font-family: "Roboto Light",Popins,sans-serif;
+    --app-font-size-lg: 1.2rem;
+    --app-font-size-sm: 1rem;
 }
 body {
-    font-family: SansSerif, Popins, -apple-system, Arial, serif,"Segoe UI",Calibri,"Calibri Light";
+    font-family: "Roboto Light",Popins,sans-serif;
     background-color: var(--app-background-color);
     color: var(--app-text-color);
 }

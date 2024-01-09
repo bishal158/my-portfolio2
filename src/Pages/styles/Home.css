@@ -55,13 +55,13 @@
         position: relative;
         .h_shape{
             transition: all 0.4s ease-in-out;
-            width: 65%;
+            width: 85%;
             height: 100%;
             position: absolute;
             background-color: var(--app-logo-color);
             left: 0;
             top: 0;
-            clip-path: polygon(0 0, 36% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 49% 0, 78% 100%, 0 100%);
             z-index: -1;
         }
         .image{
@@ -70,6 +70,7 @@
             border-radius: 15px;
             margin-left: 4rem;
             background-color: #1A1A29;
+            box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
             transition: all 0.4s ease-in-out;
             img{
                 width: 100%;
@@ -132,6 +133,53 @@
                 width: 100%;
             }
         }
+        .btn_container{
+            width: 100%;
+            display: flex;
+            align-self: flex-start;
+            flex-wrap: wrap;
+            .main_btn{
+                border-radius: 30px;
+                color: var(--app-text-color);
+                font-weight: 600;
+                position: relative;
+                border: 1px solid var(--app-logo-color);
+                display: flex;
+                align-self: flex-start;
+                align-items: center;
+                margin: 5px;
+                overflow: hidden;
+                .btn_text{
+                    padding: 0 2rem;
+                }
+                .btn_icon{
+                    background-color: var(--app-logo-color);
+                    padding: 1rem;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                &::before{
+                    content:'';
+                    position: absolute;
+                    top: 0;
+                    right:0;
+                    transform: translateX(100%);
+                    transition: all 0.4s ease-in-out;
+                    z-index: -1;
+                }
+                &:hover{
+                    &::before{
+                        width: 100%;
+                        height: 100%;
+                        background-color: var(--app-logo-color);
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+
 
     }
 }
@@ -149,41 +197,3 @@
 
 
 
-/*.cover_and_heading{*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    display: flex;*/
-/*    padding: 20px;*/
-/*    flex-wrap: wrap;*/
-/*}*/
-/*.cover_and_heading .heading{*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: flex-start;*/
-/*    flex-direction: column;*/
-/*    flex-wrap: wrap;*/
-/*}*/
-/*.heading p{*/
-/*    font-family: "Roboto Light", sans-serif ,Popins;*/
-/*    text-align: justify;*/
-/*    font-size: large;*/
-/*}*/
-
-/*.cover_and_heading .cover{*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    border-radius: 50%;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-
-/*    background-color: #2d83e5;*/
-/*}*/
-/*.cover img{*/
-/*    width: 100%;*/
-/*    height: 800px;*/
-/*    border-radius: 50%;*/
-/*    object-fit: cover;*/
-/*}*/
