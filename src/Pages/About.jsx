@@ -46,9 +46,9 @@ export const About = () => {
               </div>
               <div className={"btn_container"}>
                 <Link to={"/projects"} className={"main_btn"}>
-                  <span className={"btn_text"}> My Projects !!!</span>
+                  <span className={"btn_text"}>My Projects</span>
                   <span className={"btn_icon"}>
-                    <FontAwesomeIcon icon="fa-solid fa-brain" />
+                    <FontAwesomeIcon icon="fa-solid fa-file" />
                   </span>
                 </Link>
                 <a

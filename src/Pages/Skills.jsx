@@ -9,7 +9,7 @@ export const Skills = () => {
             <span className={"skill_text"}>my stacks</span>
           </h2>
         </div>
-        <div className={"skill"}></div>
+        <div className={"skills"}></div>
       </div>
     </>
   );

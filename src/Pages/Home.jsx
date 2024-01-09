@@ -86,7 +86,7 @@ const Home = () => {
             </div>
             <div className={"btn_container"}>
               <Link to={"/about"} className={"main_btn"}>
-                <span className={"btn_text"}> About Me !!!</span>
+                <span className={"btn_text"}>About Me !!!</span>
                 <span className={"btn_icon"}>
                   <FontAwesomeIcon icon="fa-solid fa-user" />
                 </span>

@@ -128,9 +128,9 @@
             align-items: center;
             flex-wrap: wrap;
             p{
-                font-family: "Roboto Light", Popins,sans-serif;
-                font-size: 18px;
-                width: 100%;
+                font-family: var(--app-font-family);
+                font-size: var(--app-font-size-lg);
+                padding: 0.5rem;
             }
         }
         .btn_container{

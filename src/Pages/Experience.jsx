@@ -1,17 +1,17 @@
 import "./styles/Experience.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const experiences = [
   {
     position: "Industrial Training",
     field: "Frontend Developer",
     company_name: "Nexttech Ltd",
     time_line: {
-      start: "2015",
-      end: "2015",
+      start: "01/12/2023",
+      end: "01/01/2024",
     },
     location: {
-      city: "London",
-      country: "United Kingdom",
-      address: "12/A",
+      city: "Dhaka",
+      country: "Bangladesh",
     },
     description:
       "NextTech Limited is a Software Development Company & Training\n" +
@@ -32,11 +32,28 @@ export const Experience = () => {
           </h2>
         </div>
         <div className={"experience"}>
-          {/*<span>*/}
-          {/*  <FontAwesomeIcon icon="fa-solid fa-briefcase" />*/}
-          {/*</span>*/}
           {experiences.map((experience, index) => (
-            <div className={"experience_item"} key={index}></div>
+            <div className={"experience_item"} key={index}>
+              <p>
+                <span>
+                  <FontAwesomeIcon icon="fa-solid fa-briefcase" />
+                </span>
+                <time>
+                  {experience.time_line.start} - {experience.time_line.end}
+                </time>
+              </p>
+              <div className={"experience_info"}>
+                <h3>{experience.position}</h3>
+                <h2>
+                  {experience.field} - <span>{experience.company_name}</span>
+                </h2>
+                <p>{experience.description}</p>
+                <address>
+                  <span>Location: </span>
+                  {experience.location.city},{experience.location.country}
+                </address>
+              </div>
+            </div>
           ))}
         </div>
       </div>

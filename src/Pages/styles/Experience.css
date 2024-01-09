@@ -27,3 +27,70 @@
         }
     }
 }
+.experience{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .experience_item{
+        width: 100%;
+        height: 100%;
+        margin: 0.5rem 0 0.5rem 0;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        p{
+            display:flex;
+            width: 100%;
+            height: 100%;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: justify;
+            span{
+                background-color: var(--app-logo-color);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.5rem;
+                margin-right: 0.5rem;
+                border-radius:50%;
+            }
+            time{
+                background-color: rgba(255, 255, 255, 0.16);
+                padding: 0.3rem;
+                border-radius: 10px;
+            }
+        }
+        .experience_info{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            background-color: var(--app-experience-card-background-color);
+            padding: 0.5rem;
+            border-radius: 1rem;
+            address{
+
+                span{
+                    font-weight: bold;
+                    color: var(--app-logo-color);
+                    font-size: 1.2rem;
+                }
+            }
+            h2{
+                font-size: 1.5rem;
+                font-weight: 700;
+                span{
+                    font-size: 1.4rem;
+                    font-weight: normal;
+                    color: rgb(200, 202, 232);
+                }
+            }
+        }
+    }
+}
