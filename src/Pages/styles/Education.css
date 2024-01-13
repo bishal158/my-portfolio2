@@ -36,12 +36,13 @@
     .education_item{
         width: 100%;
         height: 100%;
-        margin: 0.5rem 0 0.5rem 0;
+        margin: 0.8rem 0 0.8rem 0;
         display: flex;
         align-items: flex-start;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
+
         p{
             display:flex;
             width: 100%;
@@ -74,6 +75,11 @@
             background-color: var(--app-experience-card-background-color);
             padding: 0.5rem;
             border-radius: 1rem;
+            &:hover{
+                transition: all 0.2s linear;
+                transform: scale(1.02) ;
+                box-shadow: #66a4eb 0 5px 15px 0;
+            }
             address{
                 span{
                     font-weight: bold;

@@ -63,7 +63,7 @@ const educations = [
 export const Education = () => {
   return (
     <>
-      <div className={"container mb-3"} id={"experience"}>
+      <div className={"container mb-3 p-1"} id={"experience"}>
         <div className={"my_education_title"}>
           <h2>
             My<span> Education</span>
@@ -86,7 +86,7 @@ export const Education = () => {
                 <h2>{education.institution}</h2>
                 <p>{education.description}</p>
                 <h6>
-                  Result{education.result.point} out of{" "}
+                  Result: {education.result.point} out of{" "}
                   {education.result.out_of}
                 </h6>
                 <address>
@@ -97,6 +97,7 @@ export const Education = () => {
             </div>
           ))}
         </div>
+        <hr />
       </div>
     </>
   );

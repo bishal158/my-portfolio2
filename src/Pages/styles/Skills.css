@@ -27,3 +27,138 @@
         }
     }
 }
+.skill_item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0 0.5rem 0;
+    .progress_bar{
+        width: 100%;
+        height: 10px;
+        background-color: var(--app-text-color);
+        .html_bar{
+            height: 100%;
+            width: var(--html_bar_width);
+            animation: html 3s ease-in-out;
+        }
+        .node_bar{
+            height: 100%;
+            width: var(--node_bar_width);
+            animation: node 3s ease-in-out;
+        }
+        .css_bar{
+            height: 100%;
+            width: var(--css_bar_width);
+            animation: css 3s ease-in-out;
+        }
+        .bootstrap_bar{
+            height: 100%;
+            width: var(--bootstrap_bar_width);
+            animation: bootstrap 3s ease-in-out;
+        }
+        .javascript_bar{
+            height: 100%;
+            width: var(--javascript_bar_width);
+            animation: javascript 3s ease-in-out;
+        }
+        .react_bar{
+            height: 100%;
+            width: var(--react_bar_width);
+            animation: react 3s ease-in-out;
+        }
+        .angular_bar{
+            height: 100%;
+            width: var(--angular_bar_width);
+            animation: angular 3s ease-in-out;
+        }
+        .php_bar{
+            height: 100%;
+            width: var(--php_bar_width);
+            animation: php 3s ease-in-out;
+        }
+        .figma_bar{
+            height: 100%;
+            width: var(--figma_bar_width);
+            animation: figma 3s ease-in-out;
+        }
+        .mongo_bar{
+            height: 100%;
+            width: var(--mongo_bar_width);
+            animation: mongo 3s ease-in-out;
+        }
+        .mysql_bar{
+            height: 100%;
+            width: var(--mysql_bar_width);
+            animation: mysql 3s ease-in-out;
+        }
+        .mongo_bar{
+            height: 100%;
+            width: var(--mongo_bar_width);
+            animation: mongo 3s ease-in-out;
+        }
+        .github_bar{
+            height: 100%;
+            width: var(--github_bar_width);
+            animation: github 3s ease-in-out;
+        }
+    }
+    p{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        svg{
+            margin-right: 5px;
+        }
+    }
+}
+/*keyframes*/
+@keyframes html {
+    from { width: 0 }
+    to   { width: var(--html_bar_width) }
+}
+@keyframes css {
+    from { width: 0 }
+    to   { width: var(--css_bar_width) }
+}
+@keyframes bootstrap {
+    from { width: 0 }
+    to   { width: var(--bootstrap_bar_width) }
+}
+@keyframes php {
+    from { width: 0 }
+    to   { width: var(--php_bar_width) }
+}
+@keyframes javascript {
+    from { width: 0 }
+    to   { width: var(--javascript_bar_width) }
+}
+@keyframes angular {
+    from { width: 0 }
+    to   { width: var(--angular_bar_width) }
+}
+@keyframes react {
+    from { width: 0 }
+    to   { width: var(--react_bar_width) }
+}
+
+@keyframes figma {
+    from { width: 0 }
+    to   { width: var(--figma_bar_width) }
+}
+@keyframes github {
+    from { width: 0 }
+    to   { width: var(--github_bar_width) }
+}
+@keyframes mysql {
+    from { width: 0 }
+    to   { width: var(--mysql_bar_width) }
+}
+@keyframes mongo {
+    from { width: 0 }
+    to   { width: var(--mongo_bar_width) }
+}
+@keyframes node {
+    from { width: 0 }
+    to   { width: var(--node_bar_width) }
+}

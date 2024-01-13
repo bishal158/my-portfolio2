@@ -1,6 +1,6 @@
 import "./styles/Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import profile from "../assets/images/profile.png";
+import profile from "../assets/images/PXL_20240111_052131855.MP.png";
 import resume from "../assets/Mafuj Ahmed Bishal.pdf";
 import { Link } from "react-router-dom";
 const info =

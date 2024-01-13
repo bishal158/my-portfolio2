@@ -74,8 +74,12 @@
             background-color: var(--app-experience-card-background-color);
             padding: 0.5rem;
             border-radius: 1rem;
+            &:hover{
+                transition: all 0.2s linear;
+                transform: scale(1.02) ;
+                box-shadow: #66a4eb 0 5px 15px 0;
+            }
             address{
-
                 span{
                     font-weight: bold;
                     color: var(--app-logo-color);

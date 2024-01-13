@@ -1,11 +1,13 @@
 import "./styles/About.css";
 import profile from "../assets/images/profile.png";
+import food_monkey from "../assets/images/food_monkey/food monkey.jpg";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import resume from "../assets/Mafuj Ahmed Bishal.pdf";
 import { Experience } from "./Experience.jsx";
 import { Skills } from "./Skills.jsx";
 import { Education } from "./Education.jsx";
+
 export const About = () => {
   return (
     <>
@@ -72,6 +74,7 @@ export const About = () => {
               </div>
             </div>
           </div>
+          <hr />
         </div>
         {/*skills*/}
         <Skills />

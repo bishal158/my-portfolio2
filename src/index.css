@@ -15,6 +15,19 @@
     --app-font-size-lg: 1.2rem;
     --app-font-size-sm: 1rem;
     --app-experience-card-background-color: #4B4453;
+    /*progress bar*/
+    --html_bar_width: 90%;
+    --css_bar_width: 90%;
+    --php_bar_width: 45%;
+    --bootstrap_bar_width: 90%;
+    --javascript_bar_width: 65%;
+    --angular_bar_width: 55%;
+    --react_bar_width: 55%;
+    --node_bar_width: 30%;
+    --figma_bar_width: 40%;
+    --mysql_bar_width: 40%;
+    --mongo_bar_width: 40%;
+    --github_bar_width: 50%;
 }
 body {
     font-family: "Roboto Light",Popins,sans-serif;
