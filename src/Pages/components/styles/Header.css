@@ -11,6 +11,7 @@
     padding: 0 10px 0 10px;
     border-radius: 15px;
     @media screen and (max-width: 600px) {
+        position: fixed;
         width: 100%;
         top: auto;
         bottom: 0;
@@ -21,7 +22,6 @@
         transform: translateX(-50%);
         background-color: #4B4453;
         flex-direction: row;
-        margin-top: 50px;
     }
     .nav-link{
         width: 50px;

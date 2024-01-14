@@ -7,7 +7,7 @@ import { Projects } from "./Pages/Projects.jsx";
 import { Contact } from "./Pages/Contact.jsx";
 function App() {
   return (
-    <div>
+    <div className={"app"}>
       <Header />
       <Routes>
         <Route path={"/"} element={<Home />} />
