@@ -12,7 +12,11 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import { Navigation, Thumbs } from "swiper/modules";
-import { mentor_mind_images } from "../assets/images/mentor_mind/mentor_mind_images.js";
+import {
+  food_monkey_images,
+  mentor_mind_images,
+  web_talk_images,
+} from "../assets/images/projects_screenshots.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./styles/Projects.css";
 const portfolios = [
@@ -105,7 +109,7 @@ const projects = [
     id: "portfolio_2",
     name: "Food Monkey",
     description: "",
-    screenshots: mentor_mind_images,
+    screenshots: food_monkey_images,
     link: {
       github_url: "",
       live_url: "",
@@ -125,7 +129,7 @@ const projects = [
     id: "portfolio_3",
     name: "Web Talk",
     description: "",
-    screenshots: mentor_mind_images,
+    screenshots: web_talk_images,
     link: {
       github_url: "",
       live_url: "",
@@ -180,7 +184,12 @@ export const Projects = () => {
             </div>
           ))}
         </div>
-        <h1 className={"text-center mt-lg-5"}>Projects Details Section</h1>
+        <div className={"all_projects"}>
+          <h2>
+            All<span> Projects</span>
+            <span className={"details_text"}>Details</span>
+          </h2>
+        </div>
         <div className={"container"}>
           {projects.map((project, index) => (
             <div
