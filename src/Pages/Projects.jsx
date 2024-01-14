@@ -1,8 +1,20 @@
 import mentor_mind from "../assets/images/mentor_mind/mentor mind.jpg";
 import web_talk from "../assets/images/web_talk/web talk.jpg";
 import food_monkey from "../assets/images/food_monkey/food monkey.jpg";
-import "./styles/Projects.css";
+
+// mentor-mind images
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
+import { Navigation, Thumbs } from "swiper/modules";
+import { mentor_mind_images } from "../assets/images/mentor_mind/mentor_mind_images.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./styles/Projects.css";
 const portfolios = [
   {
     name: "Mentor Mind",
@@ -21,7 +33,7 @@ const portfolios = [
       {
         id: 3,
         icon: "fa-solid fa-link-slash",
-        link: "https://",
+        link: "https://mentor-mind-seven.vercel.app/",
       },
     ],
   },
@@ -42,7 +54,7 @@ const portfolios = [
       {
         id: 3,
         icon: "fa-solid fa-link-slash",
-        link: "https://",
+        link: "https://food-monkey.vercel.app/",
       },
     ],
   },
@@ -58,12 +70,74 @@ const portfolios = [
       {
         id: 2,
         icon: "fa-brands fa-github",
-        link: "https://",
+        link: "https://github.com/bishal158/WebTalk",
       },
       {
         id: 3,
         icon: "fa-solid fa-link-slash",
-        link: "https://",
+        link: "#",
+      },
+    ],
+  },
+];
+const projects = [
+  {
+    id: "portfolio_1",
+    name: "Mentor Mind",
+    description: "",
+    screenshots: mentor_mind_images,
+    link: {
+      github_url: "",
+      live_url: "",
+    },
+    technologies: [
+      {
+        name: "Angular",
+        image: "",
+      },
+      {
+        name: "Asp.Net Core",
+        image: "",
+      },
+    ],
+  },
+  {
+    id: "portfolio_2",
+    name: "Food Monkey",
+    description: "",
+    screenshots: mentor_mind_images,
+    link: {
+      github_url: "",
+      live_url: "",
+    },
+    technologies: [
+      {
+        name: "Angular",
+        image: "",
+      },
+      {
+        name: "Asp.Net Core",
+        image: "",
+      },
+    ],
+  },
+  {
+    id: "portfolio_3",
+    name: "Web Talk",
+    description: "",
+    screenshots: mentor_mind_images,
+    link: {
+      github_url: "",
+      live_url: "",
+    },
+    technologies: [
+      {
+        name: "Angular",
+        image: "",
+      },
+      {
+        name: "Asp.Net Core",
+        image: "",
       },
     ],
   },
@@ -95,7 +169,7 @@ export const Projects = () => {
                     <a
                       key={social.id}
                       href={social.link}
-                      target={"_blank"}
+                      target={"_parent"}
                       rel="noreferrer"
                     >
                       <FontAwesomeIcon icon={social.icon} />
@@ -106,7 +180,35 @@ export const Projects = () => {
             </div>
           ))}
         </div>
-        <div className={"container"}></div>
+        <h1 className={"text-center mt-lg-5"}>Projects Details Section</h1>
+        <div className={"container"}>
+          {projects.map((project, index) => (
+            <div
+              className={"project_details_container"}
+              id={project.id}
+              key={index}
+            >
+              <h1>{project.name}</h1>
+              <Swiper
+                loop={true}
+                navigation={true}
+                modules={[Navigation, Thumbs]}
+                grabCursor={true}
+                className="product_images_slider"
+              >
+                {project.screenshots.map((screenshot) => (
+                  <SwiperSlide key={screenshot.id}>
+                    <img
+                      src={screenshot.name}
+                      className={"img-fluid"}
+                      alt={"..."}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
