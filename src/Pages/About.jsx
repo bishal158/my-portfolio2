@@ -50,7 +50,7 @@ export const About = () => {
                 <Link to={"/projects"} className={"main_btn"}>
                   <span className={"btn_text"}>My Projects</span>
                   <span className={"btn_icon"}>
-                    <FontAwesomeIcon icon="fa-solid fa-file" />
+                    <FontAwesomeIcon icon="fa-solid fa-folder-open" />
                   </span>
                 </Link>
                 <a

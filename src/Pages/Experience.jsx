@@ -6,8 +6,8 @@ const experiences = [
     field: "Frontend Developer",
     company_name: "Nexttech Ltd",
     time_line: {
-      start: "01/12/2023",
-      end: "01/01/2024",
+      start: "12/2023",
+      end: "01/2024",
     },
     location: {
       city: "Dhaka",
@@ -24,7 +24,7 @@ const experiences = [
 export const Experience = () => {
   return (
     <>
-      <div className={"container mb-3"} id={"experience"}>
+      <div className={"container mb-3 p-1"} id={"experience"}>
         <div className={"my_experience_title"}>
           <h2>
             My<span> Timeline</span>
@@ -34,7 +34,7 @@ export const Experience = () => {
         <div className={"experience"}>
           {experiences.map((experience, index) => (
             <div className={"experience_item"} key={index}>
-              <p>
+              <p className={"time_span"}>
                 <span>
                   <FontAwesomeIcon icon="fa-solid fa-briefcase" />
                 </span>

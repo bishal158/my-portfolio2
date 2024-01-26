@@ -13,7 +13,7 @@ const routes = [
   },
   {
     to: "projects",
-    icon: "fa-solid fa-file",
+    icon: "fa-solid fa-folder-open",
   },
   {
     to: "contact",

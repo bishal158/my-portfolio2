@@ -2,8 +2,6 @@ import mentor_mind from "../assets/images/mentor_mind/mentor mind.jpg";
 import web_talk from "../assets/images/web_talk/web talk.jpg";
 import food_monkey from "../assets/images/food_monkey/food monkey.jpg";
 
-// mentor-mind images
-
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -11,14 +9,19 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-import { Navigation, Thumbs } from "swiper/modules";
+import { Autoplay, Navigation, Thumbs } from "swiper/modules";
 import {
   food_monkey_images,
+  food_monkey_technologies,
   mentor_mind_images,
+  mentor_mind_technologies,
   web_talk_images,
+  web_talk_technologies,
 } from "../assets/images/projects_screenshots.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./styles/Projects.css";
+import { useRef } from "react";
+import { useScroll, motion } from "framer-motion";
 const portfolios = [
   {
     name: "Mentor Mind",
@@ -27,7 +30,7 @@ const portfolios = [
       {
         id: 1,
         icon: "fa-solid fa-eye",
-        link: "#portfolio_1",
+        link: "#project_1",
       },
       {
         id: 2,
@@ -48,7 +51,7 @@ const portfolios = [
       {
         id: 1,
         icon: "fa-solid fa-eye",
-        link: "#portfolio_2",
+        link: "#project_2",
       },
       {
         id: 2,
@@ -69,7 +72,7 @@ const portfolios = [
       {
         id: 1,
         icon: "fa-solid fa-eye",
-        link: "#portfolio_3",
+        link: "#project_3",
       },
       {
         id: 2,
@@ -86,67 +89,76 @@ const portfolios = [
 ];
 const projects = [
   {
-    id: "portfolio_1",
+    id: "project_1",
+    no: "Project 1",
     name: "Mentor Mind",
-    description: "",
+    description:
+      "This project is my university final project. Here i contribute as a Frontend Developer. This project is focus on university mentor-ships programme to bring mentor and mentees in one platform and make bridge between them.",
     screenshots: mentor_mind_images,
-    link: {
-      github_url: "",
-      live_url: "",
-    },
-    technologies: [
+    links: [
       {
-        name: "Angular",
-        image: "",
+        id: 1,
+        name: "GitHub",
+        url: "https://github.com/bishal158/Mentor-Mind",
       },
       {
-        name: "Asp.Net Core",
-        image: "",
+        id: 1,
+        name: "Live",
+        url: "https://mentor-mind-seven.vercel.app/",
       },
     ],
+    technologies: mentor_mind_technologies,
   },
   {
-    id: "portfolio_2",
+    id: "project_2",
+    no: "Project 2",
     name: "Food Monkey",
-    description: "",
+    description:
+      "A Full-Stack online food ordering application built with MERN Stack..It built for specific restaurant.It allows users to create their own accounts, order food, see food details, rate a food, add food to cart cancel a order etc. Provide services like Dine in, Pick-up, Home Delivery etc.",
     screenshots: food_monkey_images,
-    link: {
-      github_url: "",
-      live_url: "",
-    },
-    technologies: [
+    links: [
       {
-        name: "Angular",
-        image: "",
+        id: 1,
+        name: "GitHub",
+        url: "https://github.com/bishal158/Food-Monkey",
       },
       {
-        name: "Asp.Net Core",
-        image: "",
+        id: 1,
+        name: "Live",
+        url: "https://food-monkey.vercel.app/",
       },
     ],
+    technologies: food_monkey_technologies,
   },
   {
-    id: "portfolio_3",
+    id: "project_3",
+    no: "Project 3",
     name: "Web Talk",
-    description: "",
+    description:
+      "A Full-Stack Blogging Application Built with MERN Stack.This is a fully functional blogging website built using the MERN Stack. It allows users to create their own accounts, write and edit blogs, and read blogs written by other users. The website is designed to be user-friendly and easy to navigate.",
     screenshots: web_talk_images,
-    link: {
-      github_url: "",
-      live_url: "",
-    },
-    technologies: [
+    links: [
       {
-        name: "Angular",
-        image: "",
+        id: 1,
+        name: "GitHub",
+        url: "https://github.com/bishal158/WebTalk",
       },
       {
-        name: "Asp.Net Core",
-        image: "",
+        id: 1,
+        name: "Live",
+        url: "#",
       },
     ],
+
+    technologies: web_talk_technologies,
   },
 ];
 export const Projects = () => {
+  const { scrollYProgress } = useScroll({
+    target: "ref",
+    offset: ["0 1", "1.33 1"],
+  });
+  const ref = useRef(null);
   return (
     <>
       <div className={"projects_container"}>
@@ -197,12 +209,16 @@ export const Projects = () => {
               id={project.id}
               key={index}
             >
-              <h1>{project.name}</h1>
+              <h1>{project.no}</h1>
               <Swiper
                 loop={true}
                 navigation={true}
-                modules={[Navigation, Thumbs]}
+                modules={[Navigation, Thumbs, Autoplay]}
                 grabCursor={true}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
                 className="product_images_slider"
               >
                 {project.screenshots.map((screenshot) => (
@@ -215,6 +231,29 @@ export const Projects = () => {
                   </SwiperSlide>
                 ))}
               </Swiper>
+              <div className={"details_box"}>
+                <h2>{project.name}</h2>
+                <p>{project.description}</p>
+                <h2>Technology Used</h2>
+                <div className={"technologies"}>
+                  <ul>
+                    {project.technologies.map((technology) => (
+                      <li key={technology.id}>
+                        <img src={technology.icon} alt={"sss"} />
+                        <p>{technology.name}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <h2>Useful Links</h2>
+                <div className={"useful_links"}>
+                  {project.links.map((link) => (
+                    <a href={link.url} target={"_blank"} key={link.name}>
+                      {link.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
             </div>
           ))}
         </div>

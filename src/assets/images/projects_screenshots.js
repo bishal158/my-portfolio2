@@ -1,3 +1,17 @@
+// Technology
+import Github from "../images/technologies/github.png";
+import Html from "../images/technologies/html.png";
+import Css from "../images/technologies/css.png";
+import Javascript from "../images/technologies/javascript.png";
+import React from "../images/technologies/react.png";
+import Angular from "../images/technologies/angular.png";
+import Node from "../images/technologies/node.png";
+import Express from "../images/technologies/express.png";
+import Mongodb from "../images/technologies/mongodb.png";
+import Asp_Net_Core from "../images/technologies/asp.net core.png";
+import Bootstrap from "../images/technologies/bootstrap.jpeg";
+import Typescript from "../images/technologies/typescript.png";
+
 // Mentor Mind
 import home_1 from "./mentor_mind/screenshots/Home_1.jpg";
 import home_2 from "./mentor_mind/screenshots/Home_2.jpg";
@@ -11,7 +25,6 @@ import mentor_dashboard_3 from "./mentor_mind/screenshots/mentor_dashboard_3.jpg
 import mentor_dashboard_4 from "./mentor_mind/screenshots/mentor_dashboard_4.jpg";
 import student_dashboard_1 from "./mentor_mind/screenshots/student_dashboard_1.jpg";
 import student_dashboard_2 from "./mentor_mind/screenshots/student_dashboard_2.jpg";
-
 export const mentor_mind_images = [
   {
     id: 1,
@@ -62,6 +75,38 @@ export const mentor_mind_images = [
     name: mentor_dashboard_4,
   },
 ];
+export const mentor_mind_technologies = [
+  {
+    id: 1,
+    name: "HTML5",
+    icon: Html,
+  },
+  {
+    id: 2,
+    name: "CSS3",
+    icon: Css,
+  },
+  {
+    id: 3,
+    name: "TYPESCRIPT",
+    icon: Typescript,
+  },
+  {
+    id: 4,
+    name: "BOOTSTRAP5",
+    icon: Bootstrap,
+  },
+  {
+    id: 5,
+    name: "ANGULAR JS",
+    icon: Angular,
+  },
+  {
+    id: 6,
+    name: "ASP.NET CORE",
+    icon: Asp_Net_Core,
+  },
+];
 
 // Web Talk
 
@@ -97,7 +142,48 @@ export const web_talk_images = [
     name: Write_Blogs,
   },
 ];
-
+export const web_talk_technologies = [
+  {
+    id: 1,
+    name: "HTML5",
+    icon: Html,
+  },
+  {
+    id: 2,
+    name: "CSS3",
+    icon: Css,
+  },
+  {
+    id: 3,
+    name: "JAVASCRIPT",
+    icon: Javascript,
+  },
+  {
+    id: 4,
+    name: "BOOTSTRAP5",
+    icon: Bootstrap,
+  },
+  {
+    id: 5,
+    name: "REACT JS",
+    icon: React,
+  },
+  {
+    id: 6,
+    name: "NODE JS",
+    icon: Node,
+  },
+  {
+    id: 7,
+    name: "EXPRESS JS",
+    icon: Express,
+  },
+  {
+    id: 8,
+    name: "MONGODB",
+    icon: Mongodb,
+  },
+];
 // Food Monkey
 import banner from "../images/food_monkey/screenshots/banner.jpg";
 import most_ordered from "../images/food_monkey/screenshots/most_ordered.jpg";
@@ -134,5 +220,47 @@ export const food_monkey_images = [
   {
     id: 7,
     name: most_ordered,
+  },
+];
+export const food_monkey_technologies = [
+  {
+    id: 1,
+    name: "HTML5",
+    icon: Html,
+  },
+  {
+    id: 2,
+    name: "CSS3",
+    icon: Css,
+  },
+  {
+    id: 3,
+    name: "JAVASCRIPT",
+    icon: Javascript,
+  },
+  {
+    id: 4,
+    name: "BOOTSTRAP5",
+    icon: Bootstrap,
+  },
+  {
+    id: 5,
+    name: "REACT JS",
+    icon: React,
+  },
+  {
+    id: 6,
+    name: "NODE JS",
+    icon: Node,
+  },
+  {
+    id: 7,
+    name: "EXPRESS JS",
+    icon: Express,
+  },
+  {
+    id: 8,
+    name: "MONGODB",
+    icon: Mongodb,
   },
 ];
