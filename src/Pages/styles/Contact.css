@@ -1,23 +1,142 @@
 .contact_page{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    h1{
+        text-align:  center;
+        padding: 0.5em;
+        font-size: 2.5rem;
+        color: var(--app-logo-color);
+    }
+    .CV{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0.5rem;
+        a{
+            background-color: var(--app-logo-color);
+            color: var(--app-text-color);
+            padding: 0.5rem;
+            border-radius: 3px;
+        }
+    }
+    .socials{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        a{
+            width: 50px ;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: var(--app-input-field-color);
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            margin: 0.5rem 0.8rem 0 0;
+            flex-wrap: wrap;
+        }
+    }
+    .contacts{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        p{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-size: 16px;
+            font-weight: bold;
+            @media (max-width: 300px){
+                font-size: 12px;
+            }
+
+        }
+    }
     form{
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        input[type="email"]{
+        textarea{
             width: 100%;
-            height: 45px;
-            padding: 15px;
+            padding: 0.8rem;
+            border: none;
             margin: 0 0 10px 0;
-            border-radius: 10px;
-
+            background-color: var(--app-input-field-color);
+            color: var(--app-text-color);
+            border-radius: 0.5rem;
+            &:focus::placeholder{
+                transition: all 0.4s ease-in-out;
+                position: absolute;
+                left: 20px;
+                top: 10px;
+            }
+        }
+        button{
+            width: 200px;
+            height:50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            background-color: var(--app-logo-color);
+            color: var(--app-text-color);
+            border-radius: 0.5rem;
+        }
+        input{
+            width: 100%;
+            padding: 0.8rem;
+            border: none;
+            margin: 0 0 10px 0;
+            background-color: var(--app-input-field-color);
+            color: var(--app-text-color);
+            border-radius: 0.5rem;
+            &:focus::placeholder{
+                transition: all 0.4s ease-in-out;
+                position: absolute;
+                left: 20px;
+                top: 10px;
+            }
         }
 
+    }
+}
+
+.my_contact_title{
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    h2{
+        position: relative;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: var(--app-font-family);
+        font-size: 3rem;
+        span{
+            color: var(--app-logo-color);
+        }
+        .contact_text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: rgba(247, 245, 245, 0.1);
+            transition: all 0.5s ease-in-out;
+            transform: translate(-50%, -50%);
+            font-weight: 700;
+            font-size: 3.2rem;
+            @media  screen and (max-width: 500px){
+                font-size: 2rem;
+            }
+            z-index: -1;
+        }
     }
 }

@@ -2,11 +2,12 @@ import "./styles/Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import profile from "../assets/images/PXL_20240111_052131855.MP.png";
 import resume from "../assets/Mafuj Ahmed Bishal.pdf";
+
 import { Link } from "react-router-dom";
 const info =
   "A passionate frontend developer from Bangladesh.I am always eager to learn new technologies and I am always up for a challenge. I am confident that I can quickly learn and adapt to new technologies. I am confident and passionate about frontend development and looking for a challenging opportunity so that i can learn and build a healthy career on web development.";
 const name = "Mafuj Ahmed Bishal";
-const socials = [
+export const socials = [
   {
     links: "https://www.facebook.com/mafuj.bishal.9",
     icon: "fa-brands fa-facebook",

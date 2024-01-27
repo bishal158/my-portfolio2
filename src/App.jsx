@@ -5,6 +5,7 @@ import { Header } from "./Pages/components/Header.jsx";
 import { About } from "./Pages/About.jsx";
 import { Projects } from "./Pages/Projects.jsx";
 import { Contact } from "./Pages/Contact.jsx";
+import { Footer } from "./Pages/Footer.jsx";
 function App() {
   return (
     <div className={"app"}>
