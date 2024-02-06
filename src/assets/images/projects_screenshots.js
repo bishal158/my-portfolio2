@@ -23,8 +23,19 @@ import mentor_dashboard_1 from "./mentor_mind/screenshots/mentor_dashboard_1.jpg
 import mentor_dashboard_2 from "./mentor_mind/screenshots/mentor_dashboard_2.jpg";
 import mentor_dashboard_3 from "./mentor_mind/screenshots/mentor_dashboard_3.jpg";
 import mentor_dashboard_4 from "./mentor_mind/screenshots/mentor_dashboard_4.jpg";
+import mentor_dashboard_5 from "./mentor_mind/screenshots/mentor_dashboard_5.jpg";
+import mentor_dashboard_6 from "./mentor_mind/screenshots/mentor_dashboard_6.jpg";
+import mentor_dashboard_7 from "./mentor_mind/screenshots/mentor_dashboard_7.jpg";
 import student_dashboard_1 from "./mentor_mind/screenshots/student_dashboard_1.jpg";
 import student_dashboard_2 from "./mentor_mind/screenshots/student_dashboard_2.jpg";
+import student_dashboard_3 from "./mentor_mind/screenshots/student_dashboard_3.jpg";
+import student_dashboard_4 from "./mentor_mind/screenshots/student_dashboard_4.jpg";
+import admin_dashboard_1 from "./mentor_mind/screenshots/admin_dashboard_1.jpg";
+import admin_dashboard_2 from "./mentor_mind/screenshots/admin_dashboard_2.jpg";
+import admin_dashboard_3 from "./mentor_mind/screenshots/admin_dashboard_3.jpg";
+import admin_dashboard_4 from "./mentor_mind/screenshots/admin_dashboard_4.jpg";
+import course from "./mentor_mind/screenshots/courses.jpg";
+import notice_board from "./mentor_mind/screenshots/notice_board.jpg";
 export const mentor_mind_images = [
   {
     id: 1,
@@ -60,19 +71,63 @@ export const mentor_mind_images = [
   },
   {
     id: 9,
-    name: mentor_dashboard_1,
+    name: student_dashboard_3,
   },
   {
     id: 10,
-    name: mentor_dashboard_2,
+    name: student_dashboard_4,
   },
   {
     id: 11,
-    name: mentor_dashboard_3,
+    name: mentor_dashboard_1,
   },
   {
     id: 12,
+    name: mentor_dashboard_2,
+  },
+  {
+    id: 13,
+    name: mentor_dashboard_3,
+  },
+  {
+    id: 14,
     name: mentor_dashboard_4,
+  },
+  {
+    id: 15,
+    name: mentor_dashboard_5,
+  },
+  {
+    id: 16,
+    name: mentor_dashboard_6,
+  },
+  {
+    id: 17,
+    name: mentor_dashboard_7,
+  },
+  {
+    id: 18,
+    name: admin_dashboard_1,
+  },
+  {
+    id: 19,
+    name: admin_dashboard_2,
+  },
+  {
+    id: 20,
+    name: admin_dashboard_3,
+  },
+  {
+    id: 21,
+    name: admin_dashboard_4,
+  },
+  {
+    id: 22,
+    name: course,
+  },
+  {
+    id: 23,
+    name: notice_board,
   },
 ];
 export const mentor_mind_technologies = [
