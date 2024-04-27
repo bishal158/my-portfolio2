@@ -16,6 +16,8 @@ import {
   food_monkey_technologies,
   mentor_mind_images,
   mentor_mind_technologies,
+  todo_app_images,
+  todo_app_technologies,
   web_talk_images,
   web_talk_technologies,
 } from "../assets/images/projects_screenshots.js";
@@ -174,6 +176,28 @@ const projects = [
     ],
 
     technologies: web_talk_technologies,
+  },
+  {
+    id: "project_4",
+    no: "Project 4",
+    name: "ToDo App",
+    description:
+      "A simple todo app where you can add new todo, toggle the status(complete/incomplete), delete a todo, update a todo.",
+    screenshots: todo_app_images,
+    links: [
+      {
+        id: 1,
+        name: "GitHub",
+        url: "https://github.com/bishal158/Todo-App",
+      },
+      {
+        id: 1,
+        name: "Live",
+        url: "https://todo-app-xi-orpin.vercel.app/",
+      },
+    ],
+
+    technologies: todo_app_technologies,
   },
 ];
 export const Projects = () => {

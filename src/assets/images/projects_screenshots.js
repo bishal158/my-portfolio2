@@ -13,6 +13,7 @@ import Bootstrap from "../images/technologies/bootstrap.jpeg";
 import Typescript from "../images/technologies/typescript.png";
 import Redux_Toolkit from "../images/technologies/redux-toolkit.png";
 import TailwindCss from "../images/technologies/tailwindcss.png";
+import Redux from "../images/technologies/redux.png";
 // Mentor Mind
 import home_1 from "./mentor_mind/screenshots/Home_1.jpg";
 import home_2 from "./mentor_mind/screenshots/Home_2.jpg";
@@ -333,5 +334,51 @@ export const food_monkey_technologies = [
     id: 8,
     name: "MONGODB",
     icon: Mongodb,
+  },
+];
+
+import Todo from "../images/todo_app/todo app.png";
+import Add_Todo from "../images/todo_app/screenshots/add todo.png";
+import Update_Todo from "../images/todo_app/screenshots/update todo.png";
+import All_Todos from "../images/todo_app/screenshots/all todos.jpg";
+export const todo_app_images = [
+  {
+    id: 1,
+    name: Add_Todo,
+  },
+  {
+    id: 2,
+    name: Update_Todo,
+  },
+  {
+    id: 3,
+    name: All_Todos,
+  },
+];
+export const todo_app_technologies = [
+  {
+    id: 1,
+    name: "HTML5",
+    icon: Html,
+  },
+  {
+    id: 2,
+    name: "CSS3",
+    icon: Css,
+  },
+  {
+    id: 3,
+    name: "JavaScript",
+    icon: Javascript,
+  },
+  {
+    id: 4,
+    name: "ReactJS",
+    icon: React,
+  },
+  {
+    id: 5,
+    name: "Redux",
+    icon: Redux,
   },
 ];
