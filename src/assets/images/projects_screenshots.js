@@ -11,7 +11,8 @@ import Mongodb from "../images/technologies/mongodb.png";
 import Asp_Net_Core from "../images/technologies/asp.net core.png";
 import Bootstrap from "../images/technologies/bootstrap.jpeg";
 import Typescript from "../images/technologies/typescript.png";
-
+import Redux_Toolkit from "../images/technologies/redux-toolkit.png";
+import TailwindCss from "../images/technologies/tailwindcss.png";
 // Mentor Mind
 import home_1 from "./mentor_mind/screenshots/Home_1.jpg";
 import home_2 from "./mentor_mind/screenshots/Home_2.jpg";
@@ -158,8 +159,18 @@ export const mentor_mind_technologies = [
   },
   {
     id: 6,
-    name: "ASP.NET CORE",
-    icon: Asp_Net_Core,
+    name: "NodeJS",
+    icon: Node,
+  },
+  {
+    id: 7,
+    name: "ExpressJS",
+    icon: Express,
+  },
+  {
+    id: 8,
+    name: "MongoDB",
+    icon: Mongodb,
   },
 ];
 
@@ -215,8 +226,8 @@ export const web_talk_technologies = [
   },
   {
     id: 4,
-    name: "BOOTSTRAP5",
-    icon: Bootstrap,
+    name: "TailwindCss",
+    icon: TailwindCss,
   },
   {
     id: 5,
@@ -237,6 +248,11 @@ export const web_talk_technologies = [
     id: 8,
     name: "MONGODB",
     icon: Mongodb,
+  },
+  {
+    id: 9,
+    name: "Redux Toolkit",
+    icon: Redux_Toolkit,
   },
 ];
 // Food Monkey

@@ -14,7 +14,7 @@ const educations = [
       address: "",
     },
     result: {
-      point: "3.22",
+      point: "3.26",
       out_of: "4.00",
     },
     description:
@@ -42,8 +42,8 @@ const educations = [
   {
     programme_name: "Secondary School Certificate",
     timeline: {
-      start: "2020",
-      end: "2024",
+      start: "2015",
+      end: "2017",
     },
     institution: "Mukul Niketon High School",
     location: {

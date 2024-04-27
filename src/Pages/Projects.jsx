@@ -1,5 +1,6 @@
 import mentor_mind from "../assets/images/mentor_mind/mentor mind.jpg";
 import web_talk from "../assets/images/web_talk/web talk.jpg";
+import todo_app from "../assets/images/todo_app/todo app.png";
 import food_monkey from "../assets/images/food_monkey/food monkey.jpg";
 
 // Import Swiper React components
@@ -35,12 +36,12 @@ const portfolios = [
       {
         id: 2,
         icon: "fa-brands fa-github",
-        link: "https://github.com/bishal158/Mentor-Mind",
+        link: "https://github.com/bishal158/MentorMind",
       },
       {
         id: 3,
         icon: "fa-solid fa-link-slash",
-        link: "https://mentor-mind-seven.vercel.app/",
+        link: "https://mentor-mind-public.vercel.app",
       },
     ],
   },
@@ -82,7 +83,29 @@ const portfolios = [
       {
         id: 3,
         icon: "fa-solid fa-link-slash",
-        link: "#",
+        link: "https://web-talk-three.vercel.app/",
+      },
+    ],
+  },
+
+  {
+    name: "Todo App",
+    image: todo_app,
+    socials: [
+      {
+        id: 1,
+        icon: "fa-solid fa-eye",
+        link: "#project_4",
+      },
+      {
+        id: 2,
+        icon: "fa-brands fa-github",
+        link: "https://github.com/bishal158/Todo-App",
+      },
+      {
+        id: 3,
+        icon: "fa-solid fa-link-slash",
+        link: "https://todo-app-xi-orpin.vercel.app/",
       },
     ],
   },
@@ -93,18 +116,18 @@ const projects = [
     no: "Project 1",
     name: "Mentor Mind",
     description:
-      "This project is my university final project. Here i contribute as a Frontend Developer. This project is focus on university mentor-ships programme to bring mentor and mentees in one platform and make bridge between them.",
+      "This project is my university final project. This project is focus on university mentor-ships programme to bring mentor and mentees in one platform and make bridge between them.",
     screenshots: mentor_mind_images,
     links: [
       {
         id: 1,
         name: "GitHub",
-        url: "https://github.com/bishal158/Mentor-Mind",
+        url: "https://github.com/bishal158/MentorMind",
       },
       {
         id: 1,
         name: "Live",
-        url: "https://mentor-mind-seven.vercel.app/",
+        url: "https://mentor-mind-public.vercel.app/",
       },
     ],
     technologies: mentor_mind_technologies,
@@ -146,7 +169,7 @@ const projects = [
       {
         id: 1,
         name: "Live",
-        url: "#",
+        url: "https://web-talk-three.vercel.app/",
       },
     ],
 
